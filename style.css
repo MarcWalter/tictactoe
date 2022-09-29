@@ -16,9 +16,13 @@ body {
     cursor: pointer;
 }
 
+.d-none {
+    display: none;
+}
+
 table {
     border-collapse: collapse;
-  }
+}
 
 tr {
     width: 399px;
@@ -26,8 +30,13 @@ tr {
 }
 
 td {
+    position: relative;
     width: 133px;
     height: 133px;
+}
+
+td:hover {
+    background-color: rgba(131, 252, 106, 0.199);
 }
 
 table td {
@@ -48,4 +57,12 @@ table tr:last-child td {
 
 table tr td:last-child {
     border-right: 0;
+}
+
+.shape {
+    position: absolute;
+    top: 26px;
+    left: 26px;
+    width: 80px;
+    height: 80px;
 }
